@@ -1,0 +1,30 @@
+table{
+    margin:10px;
+    padding: 10px;
+}
+td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+tr{
+    padding: 10px;
+}
+.autores{
+    color: blue;
+}
+.titulo{
+    font-size: 20px;
+}
+.año{
+    font-size: 13px;
+}
+.actores{
+    color: slategray;
+}
+.shadow{
+    box-shadow: 2px 3px 4px #BBBBBB;
+}
+.tableSpace {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
