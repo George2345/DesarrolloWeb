@@ -1,3 +1,14 @@
+@media screen and (max-width: 700px){
+    header{
+        display: none;
+    }
+    #container{
+        flex-direction: column;
+    }
+    .aboutMe{
+        width: 100%;
+    }
+}
 body{
     margin: auto;
     padding: 30px;
@@ -39,10 +50,14 @@ nav li  a:hover {
 #container{
     display: flex;
 }
-.aboutMe{
-    width: 500px;
-    height: 600px;
+.aboutMe {
+    height: 500px;
     background-color: #E3E8E8;
+}
+.titleHeading {
+    width: 100%;
+    height: 500px;
+    background-color: white;
 }
 .image{
     width: 100%;
@@ -52,18 +67,13 @@ nav li  a:hover {
 .textImage{
     padding: 20px 20px;
 }
-.titleHeading {
-    width: 100%;
-    height: 600px;
-    background-color: #ffffff;
-}
 article{
     padding: 25px 25px;
     font-family: Arial;
 }
 footer{
     clear: both;
-    background-color: #C1C5C5;
+    background-color: #DDDADA;
     text-align: center;
     font-size: 25px;
     font-family: Arial;
@@ -71,3 +81,4 @@ footer{
     line-height: 100px;
     height: 100px;
 }
+
