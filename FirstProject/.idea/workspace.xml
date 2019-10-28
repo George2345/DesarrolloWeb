@@ -27,7 +27,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlexWeb" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -78,6 +78,7 @@
       <workItem from="1572196323920" duration="4350000" />
       <workItem from="1572252628497" duration="1452000" />
       <workItem from="1572254092981" duration="14470000" />
+      <workItem from="1572273013203" duration="7264000" />
     </task>
     <servers />
   </component>

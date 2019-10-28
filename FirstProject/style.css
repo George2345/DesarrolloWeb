@@ -1,10 +1,10 @@
 body{
     margin: auto;
-    padding: 20px 1px;
     font-family: Arial, sans-serif;
 }
 ul{
     display: flex;
+    flex-wrap: nowrap;
 }
 li{
     list-style: none;
@@ -25,7 +25,7 @@ li > ul{
 }
 .content{
     display: inline-block;
-    width: 700px;
+    width: 70%;
     border-right: 1px solid #dddddd;
     padding-right: 10px;
 }
@@ -57,7 +57,6 @@ li > ul{
 .cardMovie .actors a{
     color: #666666;
 }
-
 .rating{
     color: white;
     background: #447CAD;
@@ -76,6 +75,6 @@ li > ul{
 }
 .count{
     font-size: 12px;
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 45px;
+    margin-top: 10px;
 }
