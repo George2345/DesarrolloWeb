@@ -1,7 +1,7 @@
 body{
     margin: auto;
-    padding: 10px 0px;
-    font-family: Arial;
+    padding: 20px 1px;
+    font-family: Arial, sans-serif;
 }
 ul{
     display: flex;
@@ -9,10 +9,14 @@ ul{
 li{
     list-style: none;
 }
-img {
-    box-shadow: 2px 2px 5px grey;
-    border-radius: 5px;
-    width: 100px;
+a {
+    text-decoration: none;
+    text-decoration: #326E9C;
+}
+li > ul{
+    padding: 15px 0px;
+    margin-bottom: 0px;
+    position: relative;
 }
 .position{
     font-weight: bold;
@@ -21,18 +25,57 @@ img {
 }
 .content{
     display: inline-block;
+    width: 700px;
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
 }
 .cardMovie{
     margin-left: 20px;
 }
 .container{
-    float: right;
-    font-weight: bold;
+    vertical-align: top;
+    width: 75%;
+    display: inline-block;
     margin-left: 15px;
+    min-height: 150px;
 }
-.title{
+.cardMovie > a{
+    box-shadow: 2px 3px 4px #BBBBBB;
+    border-radius: 5px;
+}
+.cardMovie .container > div{
+    margin-bottom: 15px;
+}
+.cardMovie .title {
     font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
-.age{
-    font-size: 15px;
+.cardMovie .director a{
+    color: #326E9C;
+}
+.cardMovie .actors a{
+    color: #666666;
+}
+
+.rating{
+    color: white;
+    background: #447CAD;
+    text-align: center;
+    letter-spacing: -1px;
+    border: 1px solid #447CAD;
+    border-radius: .3em;
+    box-sizing: border-box;
+    width: 2em;
+    height: 1.5em;
+    line-height: 43px;
+    margin-left: 45px;
+    margin-top: 45px;
+    font-weight: normal;
+    font-size: 30px;
+}
+.count{
+    font-size: 12px;
+    margin-left: 50px;
+    margin-top: 5px;
 }
