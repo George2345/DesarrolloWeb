@@ -1,5 +1,6 @@
 body{
     margin: auto;
+    max-width: 800px;
     font-family: Arial, sans-serif;
 }
 ul{
@@ -12,10 +13,12 @@ li{
 }
 a {
     text-decoration: none;
-
+}
+a:hover{
+    text-decoration:underline;
 }
 li > ul{
-    padding: 15px 0px;
+    padding: 10px 0px;
     margin-bottom: 0px;
     position: relative;
 }
@@ -23,19 +26,13 @@ li > ul{
     border-bottom: 1px solid #dddddd;
     margin-right: 20px;
 }
-.age{
-    font-size: 15px;
-}
 .position{
     font-weight: bold;
     color: #333;
-    font-size: 20px;
+    font-size: 15px;
 }
 .content{
-    display: inline-block;
     width: 70%;
-    border-right: 1px solid #dddddd;
-    padding-right: 10px;
 }
 .cardMovie{
     display: flex;
@@ -45,25 +42,30 @@ li > ul{
     vertical-align: top;
     width: 75%;
     margin-left: 15px;
-    min-height: 150px;
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
 }
 .cardMovie .image{
     box-shadow: 2px 3px 4px #BBBBBB;
     border-radius: 5px;
 }
 .cardMovie .container > div{
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 }
 .cardMovie .title {
-    font-size: 20px;
     font-weight: bold;
     color: black;
 }
 .cardMovie .director a{
     color: #326E9C;
+    font-size: 14px;
 }
 .cardMovie .actors a{
     color: #666666;
+    font-size: 14px;
+}
+.age{
+    font-size: 13px;
 }
 .rating{
     color: white;
@@ -82,14 +84,34 @@ li > ul{
     font-size: 30px;
 }
 .count{
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 50px;
     margin-top: 10px;
 }
 .icon{
     font-family: 'FontAwesome', 'fa-icons';
 }
+@media screen and (max-width: 400px){
+    .cardMovie .actors{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .cardMovie .director {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .container{
+        border-right: none;
+        flex: none;
+        padding-right: 0px;
+    }
+    ul{
+        flex-direction: column;
+    }
 
+}
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?rxbur1');

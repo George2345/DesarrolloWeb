@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9ceeec-1503-444f-a209-766d24235bdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Images/12_angry_men-223926054-msmall.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web.html" beforeDir="false" afterPath="$PROJECT_DIR$/web.html" afterDir="false" />
@@ -28,7 +27,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -82,6 +81,9 @@
       <workItem from="1572273013203" duration="7264000" />
       <workItem from="1572300769824" duration="11000" />
       <workItem from="1572300782091" duration="10722000" />
+      <workItem from="1572336390343" duration="40000" />
+      <workItem from="1572336432026" duration="4174000" />
+      <workItem from="1572344704779" duration="6859000" />
     </task>
     <servers />
   </component>
