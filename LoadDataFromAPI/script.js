@@ -7,7 +7,20 @@ function loadItems(){
             show(json);
         }
     };
-    xhr.open('GET', 'items.json');
+    xhr.open('GET', 'https://api.themoviedb.org/3/movie/popular?api_key=b3ec3ec9e3fcfbc105a84967e68629cf&language=en-US&page=1');
+    xhr.send();
+}
+
+function loadActors(id){
+    var xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200){
+            const json = xhr.response;
+            showActors(json);
+        }
+    };
+    xhr.open('GET', 'https://api.themoviedb.org/3/movie/'+id+'/credits?api_key=b3ec3ec9e3fcfbc105a84967e68629cf');
     xhr.send();
 }
 
@@ -16,9 +29,10 @@ function show(json){
     body.innerHTML += '<div class="panel"><ul id="top-movies">';
     var list = document.querySelector("ul");
     for(let i = 0; i < json.results.length; i++){
+
         var film = json.results[i];
         list.innerHTML += `
-    <li class="movie-card">
+    <li id="movie-${film.id}" class="movie-card">
         <div class="position">${i+1}</div>
              <div class="mc-poster">
                <a href="https://www.filmaffinity.com/es/film809297.html">
@@ -36,20 +50,8 @@ function show(json){
                    (1972)
                    <img src="https://www.filmaffinity.com/imgs/countries/US.jpg" alt="Estados Unidos">
                    </div>
-                   <div class="mc-director">
-                   <a href="" title="Francis Ford Coppola">Francis Ford Coppola</a>
-                   </div>
-                   <div class="mc-cast">
-                   <a href="">Marlon Brando</a>,
-                   <a href="">Al Pacino</a>,
-                   <a href="">James Caan</a>,
-                   <a href="">Robert Duvall</a>,
-                   <a href="">Diane Keaton</a>,
-                   <a href="">John Cazale</a>,
-                   <a href="">Talia Shire</a>,
-                   <a href="">Richard S. Castellano</a>,
-                   ...
-                </div>
+                    ${showActors(film.id)}                   
+                   
             </div>
             <div class="data">
                 <div class="avg-rating">${film.vote_average}</div>
@@ -60,5 +62,9 @@ function show(json){
     }
 }
 
+function showActors(json) {
+    var body = document.body;
+    body.innerHTML += '<div class="mc-cast"></div>';
+    var list = document.querySelector("div");
 
-
+}
