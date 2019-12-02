@@ -17,7 +17,7 @@ function loadActors(id){
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200){
             const json = xhr.response;
-            showActors(json);
+            showActors(json, id);
         }
     };
     xhr.open('GET', 'https://api.themoviedb.org/3/movie/'+id+'/credits?api_key=b3ec3ec9e3fcfbc105a84967e68629cf');
@@ -63,16 +63,16 @@ function show(json){
                        </div>
                  </div>
         </li>`;
+        loadActors(film.id);
     }
-    for (let i = 0; i < 1; i++){
-        li = document.querySelector("li");
-        loadActors(li.id);
-    }
+
 }
 
-function showActors(json) {
+function showActors(json, id) {
     div = document.getElementById("mc-cast");
     div2 = document.getElementById("mc-director");
+    div.setAttribute("id", id);
+    div2.setAttribute("id", id);
     for (let i = 0; i < 10; i++){
         var actors = json.cast[i];
         div.innerHTML += `<a href="">${actors.name}</a>,`;
