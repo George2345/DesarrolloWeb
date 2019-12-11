@@ -1,0 +1,31 @@
+body{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+#galery-container{
+	display: block;
+	width:600px;
+}
+.galery-section{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.galery-section img{
+	height:300px;
+	width:300px;
+}
+
+.buttons{
+	background: blue;
+	color: white;
+	padding: 10px;
+}
+.buttons:hover{
+	background: yellow;
+	transition: 0.5s;
+	cursor: pointer;
+	padding: 13px;
+}
