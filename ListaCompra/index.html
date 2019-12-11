@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de compra</title>
+    <link rel="stylesheet"   href="styles.css">
+</head>
+<body>
+    <div id="title">My shopping list (0 items)</div>
+    <div id="all">
+        <div id="enterItem">Enter a new item:</div>
+        <input id="input" oninput="checkInput()" onkeypress="readKey(event)">
+        <input id="buttonAdd" type="button" onclick="addItem()" disabled="true" value="Add item">
+    </div>
+    <div id="listContent">
+        <ul id="list">
+
+        </ul>
+    </div>
+
+<script rel="script" src="script.js"></script>
+</body>
+</html>
