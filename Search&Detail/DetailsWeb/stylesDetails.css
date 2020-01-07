@@ -1,0 +1,45 @@
+body {
+    font: 13px/1.231 Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    padding: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.title{
+    font-size: 25px;
+    color: grey;
+}
+.title > a{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.description > a {
+    font-size: 20px;
+    font-weight: bold;
+}
+.description-content {
+    font-size: 15px;
+    margin-top: 11px;
+    margin-bottom: 25px;
+}
+.description-content a{
+    text-decoration: none;
+    color: white;
+
+}
+.content-details {
+    margin-top: 25px;
+    color: white;
+}
