@@ -1,0 +1,71 @@
+body {
+    font: 13px/1.231 Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+.panel {
+    display: flex;
+    justify-content: center;
+}
+.image{
+    border-radius:150px;
+}
+.users{
+    list-style: none;
+}
+.content-details{
+    display: flex;
+    flex-flow: nowrap;
+}
+.user-card{
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: .8em;
+    box-sizing: border-box;
+    border: 1px solid #447CAD;
+    font-size: 15px;
+    background: #4682B4;
+}
+.mc-photo{
+    padding-right: 20px;
+    padding-top: 8px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    border-right: 1px solid #DDD;
+}
+.details > div {
+    margin-bottom: 10px;
+}
+.otherDetails{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.otherDetails > div{
+    margin-bottom: 10px;
+}
+.city {
+    padding-left: 17px;
+}
+.button{
+    max-width: 100px;
+    border-radius: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .details{
+        border: 0;
+    }
+    .content-details {
+        flex-direction: column;
+    }
+    .otherDetails {
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+}
